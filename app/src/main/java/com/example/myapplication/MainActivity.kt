@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         val nicknameTextView = binding.nicknameText
         binding.apply {
             myName?.nickname = nicknameEdit.text.toString()
-            invalidateAll()
+          
             nicknameEdit.visibility = View.GONE
             doneButton.visibility = View.GONE
             nicknameText.visibility = View.VISIBLE
