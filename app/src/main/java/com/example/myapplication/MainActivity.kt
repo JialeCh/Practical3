@@ -1,13 +1,13 @@
 package com.example.myapplication
 
 import android.content.Context
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.myapplication.databinding.ActivityMainBinding
 
@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         val nicknameTextView = binding.nicknameText
         binding.apply {
             myName?.nickname = nicknameEdit.text.toString()
-          
+            invalidateAll()
             nicknameEdit.visibility = View.GONE
             doneButton.visibility = View.GONE
             nicknameText.visibility = View.VISIBLE
